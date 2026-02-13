@@ -1,0 +1,24 @@
+app:
+  host: "0.0.0.0"
+  port: 11235   # ← Will be auto-changed to $PORT by entrypoint
+
+llm:
+  provider: "openai/gpt-4o-mini"   # Change to your preferred (or leave blank)
+
+security:
+  enabled: false                    # No auth for personal use
+  jwt_enabled: false
+
+rate_limiting:
+  enabled: false                    # ← UNLIMITED CALLS
+
+crawler:
+  memory_threshold_percent: 85.0    # Gentle on free tier RAM
+  timeouts:
+    stream_init: 60.0
+    batch_process: 600.0
+
+# Optional: Enable everything
+browser:
+  pool_size: 2                      # Keep light for free tier
+  headless: true
