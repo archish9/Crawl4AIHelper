@@ -3,7 +3,7 @@ app:
   port: 11235   # ← Will be auto-changed to $PORT by entrypoint
 
 llm:
-  provider: "openai/gpt-4o-mini"   # Change to your preferred (or leave blank)
+  provider: ""   # Change to your preferred (or leave blank)
 
 security:
   enabled: false                    # No auth for personal use

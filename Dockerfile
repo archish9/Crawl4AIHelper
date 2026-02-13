@@ -9,3 +9,4 @@ RUN chmod +x /entrypoint.sh && \
     apt-get update && apt-get install -y sed && rm -rf /var/lib/apt/lists/*
 
 ENTRYPOINT ["/entrypoint.sh"]
+CMD []
