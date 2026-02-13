@@ -4,6 +4,7 @@ FROM unclecode/crawl4ai:latest
 COPY config.yml /app/config.yml
 COPY entrypoint.sh /entrypoint.sh
 
+USER root
 RUN chmod +x /entrypoint.sh && \
     apt-get update && apt-get install -y sed && rm -rf /var/lib/apt/lists/*
 
