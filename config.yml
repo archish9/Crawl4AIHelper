@@ -22,3 +22,6 @@ crawler:
 browser:
   pool_size: 2                      # Keep light for free tier
   headless: true
+
+logging:
+  level: "INFO"

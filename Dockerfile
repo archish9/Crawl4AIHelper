@@ -20,5 +20,6 @@ RUN chown appuser:appuser /app/config.yml /entrypoint.sh /app/supervisord.conf &
     chmod +x /entrypoint.sh && \
     apt-get update && apt-get install -y sed && rm -rf /var/lib/apt/lists/*
 
+USER appuser
 ENTRYPOINT ["/entrypoint.sh"]
 CMD []
